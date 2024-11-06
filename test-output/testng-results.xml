@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T11:31:26 IST" name="Default suite" finished-at="2024-11-06T11:31:50 IST" duration-ms="23961">
+  <suite started-at="2024-11-06T13:28:35 IST" name="Default suite" finished-at="2024-11-06T13:28:40 IST" duration-ms="5063">
     <groups>
     </groups>
-    <test started-at="2024-11-06T11:31:26 IST" name="Default test" finished-at="2024-11-06T11:31:50 IST" duration-ms="23961">
-      <class name="TestScripts.AutoCompleteTest">
-        <test-method signature="AutocompleteTC()[pri:0, instance:TestScripts.AutoCompleteTest@7e5afaa6]" started-at="2024-11-06T11:31:26 IST" name="AutocompleteTC" finished-at="2024-11-06T11:31:50 IST" duration-ms="23893" status="PASS">
+    <test started-at="2024-11-06T13:28:35 IST" name="Default test" finished-at="2024-11-06T13:28:40 IST" duration-ms="5063">
+      <class name="TestScripts.JSExecTest">
+        <test-method signature="JSExecTC()[pri:0, instance:TestScripts.JSExecTest@7e5afaa6]" started-at="2024-11-06T13:28:35 IST" name="JSExecTC" finished-at="2024-11-06T13:28:40 IST" duration-ms="5001" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AutocompleteTC -->
-      </class> <!-- TestScripts.AutoCompleteTest -->
+        </test-method> <!-- JSExecTC -->
+      </class> <!-- TestScripts.JSExecTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

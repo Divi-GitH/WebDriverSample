@@ -1,5 +1,6 @@
 package TestScripts;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -13,6 +14,7 @@ public class AutoCompleteTest {
   @Test
   public void AutocompleteTC() {
 	  WebDriver driver = new ChromeDriver();
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	  driver.get("https://jqueryui.com/Autocomplete");
 	  WebElement frame1 = driver.findElement(By.cssSelector(".demo-frame"));
 	  driver.switchTo().frame(frame1);
