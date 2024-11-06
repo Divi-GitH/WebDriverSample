@@ -17,7 +17,6 @@ public class LocatorsTest {
 //	  driver.findElement(By.className("")).click();
 //	  driver.findElement(By.linkText("Elemental Selenium")).click();
 	  driver.findElement(By.partialLinkText("Elemental")).click();
-	  driver.findElement(By.xpath("//*[@id=\"login\"]/button/i")).click();
-	  
+	  driver.findElement(By.xpath("//*[@id=\"login\"]/button/i")).click(); 
   }
 }
