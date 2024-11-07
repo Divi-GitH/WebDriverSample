@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="15" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T13:28:35 IST" name="Default suite" finished-at="2024-11-06T13:28:40 IST" duration-ms="5063">
+  <suite started-at="2024-11-07T13:17:37 IST" name="SampleSuite" finished-at="2024-11-07T13:17:37 IST" duration-ms="132">
     <groups>
+      <group name="FeatureThree">
+        <method signature="SampleOneTest.testFive()[pri:0, instance:parallelScripts.SampleOneTest@71238fc2]" name="testFive" class="parallelScripts.SampleOneTest"/>
+        <method signature="SampleThreeTest.testTwo()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" name="testTwo" class="parallelScripts.SampleThreeTest"/>
+        <method signature="SampleTwoTest.testFive()[pri:0, instance:parallelScripts.SampleTwoTest@3b6ddd1d]" name="testFive" class="parallelScripts.SampleTwoTest"/>
+      </group> <!-- FeatureThree -->
     </groups>
-    <test started-at="2024-11-06T13:28:35 IST" name="Default test" finished-at="2024-11-06T13:28:40 IST" duration-ms="5063">
-      <class name="TestScripts.JSExecTest">
-        <test-method signature="JSExecTC()[pri:0, instance:TestScripts.JSExecTest@7e5afaa6]" started-at="2024-11-06T13:28:35 IST" name="JSExecTC" finished-at="2024-11-06T13:28:40 IST" duration-ms="5001" status="PASS">
+    <test started-at="2024-11-07T13:17:37 IST" name="ModuleOneTest" finished-at="2024-11-07T13:17:37 IST" duration-ms="132">
+      <class name="parallelScripts.SampleOneTest">
+        <test-method signature="testFive()[pri:0, instance:parallelScripts.SampleOneTest@71238fc2]" started-at="2024-11-07T13:17:37 IST" name="testFive" finished-at="2024-11-07T13:17:37 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JSExecTC -->
-      </class> <!-- TestScripts.JSExecTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testFive -->
+        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleOneTest@71238fc2]" started-at="2024-11-07T13:17:37 IST" name="testThree" finished-at="2024-11-07T13:17:37 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+      </class> <!-- parallelScripts.SampleOneTest -->
+      <class name="parallelScripts.SampleThreeTest">
+        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" started-at="2024-11-07T13:17:37 IST" name="testOne" finished-at="2024-11-07T13:17:37 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" started-at="2024-11-07T13:17:37 IST" name="testThree" finished-at="2024-11-07T13:17:37 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThree -->
+        <test-method signature="testTwo()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" started-at="2024-11-07T13:17:37 IST" name="testTwo" finished-at="2024-11-07T13:17:37 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+      </class> <!-- parallelScripts.SampleThreeTest -->
+      <class name="parallelScripts.SampleTwoTest">
+        <test-method signature="testFive()[pri:0, instance:parallelScripts.SampleTwoTest@3b6ddd1d]" started-at="2024-11-07T13:17:37 IST" name="testFive" finished-at="2024-11-07T13:17:37 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFive -->
+        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleTwoTest@3b6ddd1d]" started-at="2024-11-07T13:17:37 IST" name="testOne" finished-at="2024-11-07T13:17:37 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+      </class> <!-- parallelScripts.SampleTwoTest -->
+    </test> <!-- ModuleOneTest -->
+  </suite> <!-- SampleSuite -->
 </testng-results>
