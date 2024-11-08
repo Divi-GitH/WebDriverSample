@@ -1,24 +1,36 @@
 package parallelScripts;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class SampleTwoTest {
+	WebDriver driver;
   @Test
   public void testOne() {
-	  System.out.println("Test21 in SampleTwo...");
+	  driver = new EdgeDriver();
+	  long id = Thread.currentThread().getId();
+	  System.out.println("Test21 in SampleTwo..." + id);
   }
   @Test(groups="FeatureOne")
   public void testTwo() {
-	  System.out.println("Test22 in SampleTwo...");
+	  driver = new EdgeDriver();
+	  long id = Thread.currentThread().getId();
+	  System.out.println("Test22 in SampleTwo..." + id);
   }
   
 	  @Test(groups="FeatureOne")
 	  public void testThree() {
-		  System.out.println("Test23 in SampleTwo...");
+		  driver = new ChromeDriver();
+		  long id = Thread.currentThread().getId();
+		  System.out.println("Test23 in SampleTwo..." + id);
 }
 	  @Test(groups="FeatureOne")
 	  public void testFour() {
-		  System.out.println("Test24 in SampleTwo...");
+		  driver = new ChromeDriver();
+		  long id = Thread.currentThread().getId();
+		  System.out.println("Test24 in SampleTwo..." + id);
 }
 	  @Test(groups="FeatureThree")
 	  public void testFive() {

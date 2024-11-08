@@ -3,7 +3,7 @@ package parallelScripts;
 import org.testng.annotations.Test;
 
 public class SampleOneTest {
-  @Test(groups="FeatureOne")
+  @Test(invocationCount =4,threadPoolSize =2, timeOut=10000)
   public void testOne() {
 	  System.out.println("Test11 in SampleOne...");
   }

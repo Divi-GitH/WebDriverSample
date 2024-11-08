@@ -1,50 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="15" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-07T13:17:37 IST" name="SampleSuite" finished-at="2024-11-07T13:17:37 IST" duration-ms="132">
+  <suite started-at="2024-11-08T13:18:24 IST" name="Default suite" finished-at="2024-11-08T13:18:56 IST" duration-ms="32113">
     <groups>
-      <group name="FeatureThree">
-        <method signature="SampleOneTest.testFive()[pri:0, instance:parallelScripts.SampleOneTest@71238fc2]" name="testFive" class="parallelScripts.SampleOneTest"/>
-        <method signature="SampleThreeTest.testTwo()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" name="testTwo" class="parallelScripts.SampleThreeTest"/>
-        <method signature="SampleTwoTest.testFive()[pri:0, instance:parallelScripts.SampleTwoTest@3b6ddd1d]" name="testFive" class="parallelScripts.SampleTwoTest"/>
-      </group> <!-- FeatureThree -->
     </groups>
-    <test started-at="2024-11-07T13:17:37 IST" name="ModuleOneTest" finished-at="2024-11-07T13:17:37 IST" duration-ms="132">
-      <class name="parallelScripts.SampleOneTest">
-        <test-method signature="testFive()[pri:0, instance:parallelScripts.SampleOneTest@71238fc2]" started-at="2024-11-07T13:17:37 IST" name="testFive" finished-at="2024-11-07T13:17:37 IST" duration-ms="14" status="PASS">
+    <test started-at="2024-11-08T13:18:24 IST" name="Default test" finished-at="2024-11-08T13:18:56 IST" duration-ms="32113">
+      <class name="TestScripts.ExtentReportSampleTest">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:24 IST" name="setupExtent" finished-at="2024-11-08T13:18:25 IST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFive -->
-        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleOneTest@71238fc2]" started-at="2024-11-07T13:17:37 IST" name="testThree" finished-at="2024-11-07T13:17:37 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- setupExtent -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:25 IST" name="setup" finished-at="2024-11-08T13:18:29 IST" duration-ms="3815" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-      </class> <!-- parallelScripts.SampleOneTest -->
-      <class name="parallelScripts.SampleThreeTest">
-        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" started-at="2024-11-07T13:17:37 IST" name="testOne" finished-at="2024-11-07T13:17:37 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="seleniumSearchTC()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:29 IST" name="seleniumSearchTC" finished-at="2024-11-08T13:18:32 IST" duration-ms="3000" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" started-at="2024-11-07T13:17:37 IST" name="testThree" finished-at="2024-11-07T13:17:37 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- seleniumSearchTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:32 IST" name="tearDown" finished-at="2024-11-08T13:18:32 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method signature="testTwo()[pri:0, instance:parallelScripts.SampleThreeTest@3f6b0be5]" started-at="2024-11-07T13:17:37 IST" name="testTwo" finished-at="2024-11-07T13:17:37 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:32 IST" name="setup" finished-at="2024-11-08T13:18:35 IST" duration-ms="2457" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTwo -->
-      </class> <!-- parallelScripts.SampleThreeTest -->
-      <class name="parallelScripts.SampleTwoTest">
-        <test-method signature="testFive()[pri:0, instance:parallelScripts.SampleTwoTest@3b6ddd1d]" started-at="2024-11-07T13:17:37 IST" name="testFive" finished-at="2024-11-07T13:17:37 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="appiumSearchTC()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:35 IST" name="appiumSearchTC" finished-at="2024-11-08T13:18:40 IST" duration-ms="5066" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFive -->
-        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleTwoTest@3b6ddd1d]" started-at="2024-11-07T13:17:37 IST" name="testOne" finished-at="2024-11-07T13:17:37 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- appiumSearchTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:40 IST" name="tearDown" finished-at="2024-11-08T13:18:40 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-      </class> <!-- parallelScripts.SampleTwoTest -->
-    </test> <!-- ModuleOneTest -->
-  </suite> <!-- SampleSuite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:40 IST" name="setup" finished-at="2024-11-08T13:18:43 IST" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cucumberSearchTC()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:43 IST" name="cucumberSearchTC" finished-at="2024-11-08T13:18:48 IST" duration-ms="5680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cucumberSearchTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:48 IST" name="tearDown" finished-at="2024-11-08T13:18:49 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:49 IST" name="setup" finished-at="2024-11-08T13:18:51 IST" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="javaSearchTC()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:51 IST" name="javaSearchTC" finished-at="2024-11-08T13:18:56 IST" depends-on-methods="TestScripts.ExtentReportSampleTest.seleniumSearchTC" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaSearchTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:56 IST" name="tearDown" finished-at="2024-11-08T13:18:56 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="finishextent()[pri:0, instance:TestScripts.ExtentReportSampleTest@729d991e]" started-at="2024-11-08T13:18:56 IST" name="finishextent" finished-at="2024-11-08T13:18:56 IST" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishextent -->
+      </class> <!-- TestScripts.ExtentReportSampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
