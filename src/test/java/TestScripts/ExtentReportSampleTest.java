@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -15,7 +16,11 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+import CommonUtils.Utility;
 
 public class ExtentReportSampleTest {
 		WebDriver driver;
@@ -52,17 +57,17 @@ public void setup() {
 		  }
 		//@Test(enabled = false)
 		//@Test(priority=-1)
-		@Test
+		@Test (retryAnalyzer = RetryAnalyzerImpl.class)
 		public void seleniumSearchTC() {
 			  extentTest = extentReports.createTest("Selenium Search Test");
 			  driver.get("https://www.google.com/");
 			  WebElement searchBox = driver.findElement(By.name("q"));
 			  searchBox.sendKeys("Selenium Tutorial");
 			  searchBox.submit();
-			  Assert.assertEquals("Selenium Tutorial - Google Search", driver.getTitle());
+			  Assert.assertEquals("Selenium Tutorial - Google Search page", driver.getTitle());
 		}  
 		//removed 2 @Test
-		@Test
+		
 			  public void cucumberSearchTC() {
 			   extentTest = extentReports.createTest("cucumber Search Test");
 			  	  driver.get("https://www.google.com/");
@@ -72,7 +77,7 @@ public void setup() {
 			  	  Assert.assertEquals("cucumber Tutorial - Google Search", driver.getTitle());
 			  	  
 			  }	  	  
-		@Test
+		
 			  	public void appiumSearchTC() {
 					extentTest = extentReports.createTest("appium Search Test");
 			  		  driver.get("https://www.google.com/");
@@ -85,16 +90,26 @@ public void setup() {
 			  	@AfterTest
 			  	public void finishextent() {
 			  	 extentReports.flush();
+		
 			  	}
 			  	
 			  	@AfterMethod
-			  	public void tearDown() {
-			  		driver.quit();
+
+			  	public void tearDown(ITestResult result) {
+			  		
+			  		if(ITestResult.FAILURE ==result.getStatus()) {
+			  			extentTest.log(Status.FAIL, result.getThrowable().getMessage());
+			  			String strPath = Utility.getScreenshotPath(driver);
+			  			extentTest.fail(
+			  					MediaEntityBuilder.createScreenCaptureFromPath(strPath).build());
+			  		}
+			  			else if(ITestResult.SKIP ==result.getStatus()) {
+				  			extentTest.log(Status.SKIP, result.getThrowable().getMessage());
+			  			}
+			  		}
+			  
+	//		  		driver.quit();
 			  	{
 		}
 
-
 		}
-
-
-  }
