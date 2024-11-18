@@ -22,7 +22,7 @@ public class RemoteWebDriverTest {
 	  //java -jar selenium-server-4.26.0.jar standalone --selenium-manager true
 	  String strHub = "http://";
 	  
-	  driver = new RemoteWebDriver(new URL(strHub), options);
+//	  driver = new RemoteWebDriver(new URL(strHub), options);
 	  
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	  driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
